@@ -20,7 +20,43 @@
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
-    <h1>Unit Conversion</h1>
+    <main>
+      <form id="conversion-form">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input name="unit-value" id="unit-value" type="number" />
+        <button type="submit">Convert</button>
+      </form>
+
+      <div>
+        <section>
+          <h2>Length (Meter/Feet)</h2>
+          <p>
+            <span class="unit-from">20</span> meters =
+            <span class="to-feet">65.616</span> feet |
+            <span class="unit-from">20</span> feet =
+            <span id="to-meter">6.096</span> meters
+          </p>
+        </section>
+        <section>
+          <h2>Volume (Liters/Gallons)</h2>
+          <p>
+            <span class="unit-from">20</span> liters =
+            <span id="to-gallon">5.284</span> gallons |
+            <span class="unit-from">20</span> gallons =
+            <span id="to-liter">75.708</span> liters
+          </p>
+        </section>
+        <section>
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p>
+            <span class="unit-from">20</span> kilos =
+            <span id="to-pound">44.092</span> pounds |
+            <span class="unit-from">20</span> pounds =
+            <span id="to-kilo">9.072</span> kilos
+          </p>
+        </section>
+      </div>
+    </main>
 
     <script src="src/scripts/script.js"></script>
   </body>
